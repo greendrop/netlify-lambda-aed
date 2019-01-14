@@ -17,7 +17,6 @@ exports.handler = async (event, context, callback) => {
         };
       });
 
-  console.log(response.body)
   callback(null, {
     statusCode: response.status,
     headers: { 'Access-Control-Allow-Origin': '*' },
